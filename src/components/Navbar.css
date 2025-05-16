@@ -1,0 +1,92 @@
+/* Stilizare navbar */
+.navbar {
+    background-color: #6c757d; /* Gri deschis pentru fundalul navbar-ului */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Stilizare butoane generice (Login, Register, Logout) */
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Buton Login - verde */
+button.login {
+    background-color: #28a745; /* verde pentru login */
+    color: white;
+}
+
+button.login:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Buton Register - albastru deschis */
+button.register {
+    background-color: #17a2b8; /* albastru pastel pentru înregistrare */
+    color: white;
+}
+
+button.register:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+/* Buton Logout - roșu */
+button.logout {
+    background-color: #f44336;
+    color: white;
+}
+
+button.logout:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Navbar Link-uri */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover pe link-uri */
+.navbar a:hover {
+    background-color: #17a2b8; /* culoare albastră la hover */
+}
+
+/* Stil pentru link-ul activ */
+.navbar a.active {
+    background-color: #28a745; /* Culoare verde pentru link-ul activ */
+}
+
+/* Responsivitate pentru navbar (pe mobil) */
+@media screen and (max-width: 600px) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar a {
+        text-align: left;
+    }
+}
+/* Stilizare text "Contul meu" */
+.navbar b {
+  font-size: 22px;  /* Mărim fontul pentru "Contul meu" la fel ca pentru "Meniu" */
+  font-weight: bold;
+}
+

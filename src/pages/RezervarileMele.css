@@ -1,0 +1,63 @@
+/* Containerul pentru lista rezervărilor */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Detalii rezervare (data, ora, mesaj) */
+ul li .details {
+  font-size: 14px;
+  color: #333;
+  max-width: 85%;  /* Limitează lățimea rezervării pentru a face loc butonului */
+  word-wrap: break-word;
+}
+
+/* Butonul de anulare */
+ul li .cancel {
+  padding: 6px 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: auto; /* Ajustăm lățimea pentru a fi mai restrâns */
+  margin-left: 10px;
+}
+
+ul li .cancel:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* Butonul de trimitere rezervare - modificate pentru a fi mai îngust și aliniat spre stânga */
+button.submit {
+  padding: 8px 20px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: auto; /* Buton mai îngust */
+  margin-left: 0; /* Aliniere la stânga */
+}
+
+button.submit:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}

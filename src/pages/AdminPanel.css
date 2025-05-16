@@ -1,0 +1,73 @@
+/* Styling for daily view table */
+.daily-table, .weekly-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.daily-table th, .daily-table td,
+.weekly-table th, .weekly-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.daily-table td, .weekly-table td {
+  background-color: #f9f9f9;
+}
+
+.occupied {
+  background-color: lightgreen;
+}
+
+/* Styling for buttons */
+button {
+  padding: 8px 16px;
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Cancel button styling */
+.cancel-button {
+  padding: 6px 15px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: auto; /* Ajustăm lățimea pentru a fi mai restrâns */
+  margin-left: 10px;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+
+}
+
+/* Search bar styling */
+.search-box {
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 10px; /* Distanța între butoane */
+  justify-content: center; /* Opțional - pentru a le centra pe linie */
+}
+
