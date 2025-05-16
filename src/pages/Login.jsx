@@ -26,9 +26,14 @@ function Login() {
 
       // ✅ Redirecționare în funcție de rol
       if (response.data.user.is_admin) {
-        navigate(`/admin`);
+	
+	navigate("/admin");
+window.location.reload(); // ⬅️ Adaugă asta imediat după navigate
+	
       } else {
-        navigate(`/rezervari`);
+        navigate("/rezervari");
+window.location.reload();
+
       }
 
     } catch (error) {
