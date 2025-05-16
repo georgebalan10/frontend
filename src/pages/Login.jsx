@@ -24,9 +24,9 @@ function Login() {
 
       // ✅ Redirecționare în funcție de rol
       if (response.data.user.is_admin) {
-        window.location.href = "/admin";
+        navigate("/admin");
       } else {
-        window.location.href = "/rezervari";
+        navigate("/rezervari");
       }
 
     } catch (error) {
