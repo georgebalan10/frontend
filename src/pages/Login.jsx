@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import API_BASE_URL from "../config";
+import { useNavigate } from 'react-router-dom'; // ✅ Adăugat
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); // ✅ Adăugat
 
   const handleSubmit = async (e) => {
     e.preventDefault();
