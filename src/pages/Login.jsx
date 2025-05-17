@@ -92,7 +92,7 @@ function Login() {
         </button>
       </form>
       <p style={{ marginTop: '20px', fontSize: '14px' }}>
-        Nu ai cont? <a href="/register">Creează unul aici</a>
+        Nu ai cont? <Link to="/register">Creează unul aici</Link>
       </p>
     </div>
   );

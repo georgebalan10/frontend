@@ -32,7 +32,7 @@ function Register() {
       });
 
       alert(res.data.message);
-      window.location.href = "/";
+      navigate("/login");
     } catch (err) {
       alert("Eroare la înregistrare");
     }
@@ -119,7 +119,7 @@ function Register() {
         </button>
 
         <p style={{ marginTop: '10px' }}>
-          Ai deja cont? <a href="/login">Autentifică-te aici</a>
+          Ai deja cont? <Link to="/login">Autentifică-te aici</Link>
         </p>
       </form>
     </div>
