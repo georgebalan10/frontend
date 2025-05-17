@@ -32,7 +32,7 @@ function Register() {
       });
 
       alert(res.data.message);
-      navigate("/login");
+      window.location.href = "/";
     } catch (err) {
       alert("Eroare la înregistrare");
     }
