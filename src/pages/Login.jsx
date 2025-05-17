@@ -23,18 +23,20 @@ function Login() {
         email: response.data.user.email,
         is_admin: response.data.user.is_admin
       }));
+// ✅ În loc de navigate, dăm refresh la pagina principală
+    window.location.href = "/";
 
       // ✅ Redirecționare în funcție de rol
-      if (response.data.user.is_admin) {
+      //if (response.data.user.is_admin) {
 	
-	navigate("/admin");
-window.location.reload(); // ⬅️ Adaugă asta imediat după navigate
-	
-      } else {
-        navigate("/rezervari");
-window.location.reload();
+//	navigate("/admin");
+//window.location.reload(); // ⬅️ Adaugă asta imediat după navigate
+//	
+ //     } else {
+   //     navigate("/rezervari");
+//window.location.reload();
 
-      }
+  //    }
 
     } catch (error) {
       if (error.response && error.response.status === 401) {
